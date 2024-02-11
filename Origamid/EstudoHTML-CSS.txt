@@ -5,7 +5,7 @@ https://www.svgrepo.com/ - Galeria de svg gratis
 
 https://squoosh.app/ - reduzir tamanho das imagens
 
-Figma - programa para criar os templates dos sites(canvas)
+Figma - programa para criar os templates dos sites( canvas )
 
 
 
