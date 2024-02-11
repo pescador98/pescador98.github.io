@@ -1,0 +1,85 @@
+https://www.freecodecamp.org/portuguese/learn/javascript-algorithms-and-data-structures/
+
+https://drive.google.com/file/d/1L6Ei1MeLiFwAhn4eGEmnh53x2ECsp61t/view?pli=1
+
+:)
+
+Git:
+    git fetch: sincroniza os diretorios
+    git add: adiciona os arquivos modificados
+    git commit: confirma as modificações -m faz comentarios
+    git push: sobe para o Git as modificações feitas
+
+Array:
+    https://www.w3schools.com/js/js_array_methods.asp
+    pop: remove o ultimo item do Array
+    push: adiciona o elemento no fim do Array
+    shift: remove o primeiro item do Array indice [0]
+    unshift: adiciona o elemento no inicio do Array
+
+Objetos:
+    Objetos são semelhantes a array, é como se fosse uma variavel com propriedades, ex:
+    const cat = {
+        "name": "Whiskers",
+        "legs": 4,
+        "tails": 1,
+        "enemies": ["Water", "Dogs"]
+        "favorite food": ["Fish","Pedisco"]
+    };
+    Para acessar essas propriedades podem ser usado . quando o nome da propriedades não conter espaços, ex: cat.name. E quando ouver espaço no nome da propriedadesdeve se usar [] ex: cat["favorite food"]. Pode usar os [] com o valor de alguma variavel, imaginamos que no codigo tenha alguma variavel com valor de  `enemies` (let val = "enemies") e usar cat.[val] é o mesmo que usar cat.enemies, cat["enemies"].
+    Pode se usar [][] quando for usar mais de um parametro
+
+Expressão regular (regex)
+    https://www.devmedia.com.br/iniciando-expressoes-regulares/6557
+    https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_expressions
+    As RegEx são baseadas em dois elementos: um padrão e modificadores. Esses elementos, em conjunto, formam a chamada expressão regular, cuja sintaxe básica é bastante simples: /padrão/ modificadores, os modificadores são:
+        i	- Não leva em consideração maiúsculas e minúsculas (case-insensitive).
+        g	- Global Match – procura todas as ocorrências da expressão no texto, ao invés de parar na primeira ocorrência.
+        m	- Procura por ocorrências em múltiplas linhas.
+    Pode ser usado mais de um modificador em uma expressão.
+    Caracteres metas:
+        . (ponto)     - Qualquer caractere, exceto nova linha e terminador de linha.(Coringa)
+            Caso o metodo retorne True cada ponto retornara o proximo caractere. (Ex: /te/ da string "teste" o ponto retornara s, se usar dois pontos vai ser st)
+        \ Caractere de escape
+        \w e \W       - Palavra e não-palavra.
+        \d e \D       - Dígito e não-dígito.
+        \s e \S       - Espaço em branco e não-espaço.
+        \b e \B       - No começo/fim da palavra e não-começo/fim da palavra.
+        \0            - Caractere NUL.
+        \n    		  - Caractere nova linha.
+        \f    		  - Caractere form feed.
+        \r    		  - Caractere de retorno.
+        \u            - Caractere unicode
+        \t    		  - Caractere que representa “tab”.
+        \v    		  - Caractere que representa “tab” vertical.
+        \xxx     	  - Caractere especificado pelo número octal xxx.
+        \xdd     	  - Caractere especificado pelo número hexadecimal dd.
+        \uxxxx        - Caractere unicode especificado pelo número hexadecimal xxxx.
+        []	          - Usado para indicar o conjunto de caracteres que podem conter no texto pesquisado. 
+        ?             - 
+        [^]	          - Usado para indicar o conjunto de caracteres que NÃO podem conter na pesquisa.
+        (...)	      - Grupos indica o início e o fim de um grupo; ex.: /(abc)+(def)/ encontra um ou mais ocorrencias de "abc" seguido por uma ocorrencia de "def". obs.: para usar o parêntese, literalmente, utilize o caractere de escape "\ (" ou "\ )", ou ainda, "[ ( ]" ou "[ ) ]"
+        {n}	- Pesquisa n ocorrências correspondentes ao caracter precedido. Onde, n deve ser um inteiro positivo. Por exemplo, /a{2}/ não encontra o 'a' em "candy," mas encontra-o se houver a quantidade de a's informarda em "caandy," e os dois primeiros a's em "caaandy."
+        {n,m} - Pesquisa a n menor correspondência e a m maior correspondência do caractere precedido. Quando n ou m é zero, ele poderá ser omitido. Onde, n e m devem ser inteiros positivo. Por exemplo, /a{1,3}/ não encontra nada em "cndy", mas encontra o 'a' em "candy", encontra os dois primeiros a's em "caandy," e encontra os três primeiros a's em "caaaaaaandy". Observe que, ao fazer a correspondência de "caaaaaaandy", serão encontrados apenas os "aaa", mesmo que a string tenha mais a's.
+        *             - para dizer se repetem 0 ou mais vezez {0,}
+        +             - para dizer se repetem 1 ou mais vezez {1,}
+        ?             - para dizer se repetem 0 ou uma vez {0,1}
+    
+
+
+    Alguns metodos:
+        .teste() // regex.test(string)
+            let testStr = "freeCodeCamp";
+            let testRegex = /Code/;
+            testRegex.test(testStr); // testa se regex(expressão regular) esta presente na string. EX: testa se Code está dendro de testStr = "freeCodeCamp".
+            Se esse metodo for verdade retorna True caso contrario False
+        .match() //string.match(regex)
+            let ourStr = "Regular expressions";
+            let ourRegex = /expressions/;
+            ourStr.match(ourRegex); // testa se a string tem o regex(expressão regular). EX: testa se a string possui o regex(ourRegex = /expressions/;)
+            Se esse metodo for verdade retorna os valores da pesquisa em um array, se for falso retorna null
+        .replace() //string.replace(regex , "o que quiser alterar se a regex for true")
+            let wrongText = "The sky is silver.";
+            let silverRegex = /silver/;
+            wrongText.replace(silverRegex, "blue"); //procura o regex na string, se achar subistitui por "blue"
+
