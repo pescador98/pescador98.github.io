@@ -51,7 +51,8 @@ Responsividade:
       @media (max-width: 500px) - quando o width for no maximo 500 ele vai executar o que esta no bloco(max-width significa quando for menor que)
       @media (min-width: 1000px) - quando o width for no minimo 1000 ele vai executar o que esta no bloco(max-width significa quando for maior que)
       operador and (e) ele executa o @media com duas condições verdadeiras, so sera executado se a primeira e a segunda condiçõesforem verdadeiras.
-        @media (max-width: 500px) and (min-width: 1000px) - quando o width for de 500 a 1000 ele ira executar fora essas condições não sera executado.
+      @media (max-width: 500px) and (min-width: 1000px) - quando o width for de 500 a 1000 ele ira executar fora essas condições não sera executado.
+      @media (prefers-color-scheme: dark ou ligth) - escolhe o modo de cor com base no dispositivo do usuario 
 
 Formularios:
   *form
@@ -87,3 +88,6 @@ Sinais:
   div > p - Apenas p que for filho direto de div (p que estiver dentro da div pae e filho)
   p + p - Todo p que vier após um elemento p
   * - Seleciona todos os elementos do site.
+
+Variaveis:
+  --nome-da-variavel: valor da variavel. usado para valores pre-definidos como cor, tamanho de texto, margin, etc. Normalmente usado em :root{}
