@@ -1,5 +1,19 @@
+:root {
+  --fundo: #f7f7f7;
+  --texto-primario: #000;
+  --logo: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo: #202020;
+    --texto: white;
+    --logo: invert(100%);
+  }
+}
+
 body {
-  background-color: #f7f7f7;
+  background-color: var(--fundo);
   font-family: Arial;
   margin: 0rem;
   display: grid;
@@ -32,6 +46,10 @@ p {
   display: grid;
   justify-items: center;
   gap: calc(60 / 16 * 1rem);
+}
+
+.test {
+  filter: var(--logo);
 }
 
 .menu {

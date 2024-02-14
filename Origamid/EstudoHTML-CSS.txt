@@ -9,14 +9,14 @@ Figma - programa para criar os templates dos sites(canvas)
 
 
 
-Listas
+Listas - lista de conteudos em html
   ul: A tag <ul> marca uma lista de itens sem ordem (unordered list). Cada item da lista deve ser marcado com uma <li></li>. Para colocar um subitem na lista adicionar dentro de <ul> mais uma cadedia de <ul><li></li></ul>
   ol: A tag <ol> marca uma lista ordenada (ordered list). Lista sequemncial 1 a indefinido.
     CSS:
       list-style: muda o estilo da decoração da linha. Quadrado, circulo, numeros
 
 
-Pseudo Classes - https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+Pseudo Classes - tags usadas para manipular elementos com o clique, deixar o mouse em cima, etc - https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
   Estados:
     :hover = Muda o elemento quando passar com o Mouse por cima.
     :focus = Quando elemento estiver focado com tab ele se altera.
@@ -29,8 +29,13 @@ Pseudo Classes - https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
     :not = O :not nega a seleção de um elemento específico. 
       Ex: ol li:not(:first-child, :last-child) ele não aplica na primeira e segunda linha
       section h2:not(.contato) ele não aplica estilo a classe contato  
+    Atributos com Seletores:
+      [atributo] - Seleciona os elementos que tiverem o atributo dentro dos []. ex:[required]{}
+      [name="email"] - Seleciona apenas o elemento que tiver o atributo e o valor.
+      [href^="#"] - Atributos que comecem ^ com o valor.
+      [href$=".com"] - Atributos que terminem $ com o valor.
 
-Pseudo Elements - https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements
+Pseudo Elements - adiciona elementos antes ou depois do inicio selecionado - https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements
   Sintaxe
     seletor::pseudo-elemento {
       content: valor;
@@ -40,11 +45,45 @@ Pseudo Elements - https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elemen
     ::first-line = Seleciona a primeira linha do conteúdo.
     ::first-letter = Seleciona a primeira letra do conteúdo. 
 
-Responsividade    
+Responsividade:
   Media Queries - https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_queries
     @media é o seletor que cria condições no css, como se fosse um if esle 
       @media (max-width: 500px) - quando o width for no maximo 500 ele vai executar o que esta no bloco(max-width significa quando for menor que)
       @media (min-width: 1000px) - quando o width for no minimo 1000 ele vai executar o que esta no bloco(max-width significa quando for maior que)
       operador and (e) ele executa o @media com duas condições verdadeiras, so sera executado se a primeira e a segunda condiçõesforem verdadeiras.
         @media (max-width: 500px) and (min-width: 1000px) - quando o width for de 500 a 1000 ele ira executar fora essas condições não sera executado.
-    
+
+Formularios:
+  *form
+    form - A tag form é utilizada para envolver os campos de um formulário.
+    action="" - O atributo action indica o arquivo/url que será ativado ao enviarmos o formulário.
+    method="" - POST (envio de informações) e GET (busca de informações).
+  *input
+    input - Campo mais comum de formulário, possui diferentes tipos.
+    type="" - Define o tipo. text, checkbox, radio, email, file e outros.
+      <input type="button">,<input type="checkbox">,<input type="color">,<input type="date">,<input type="datetime-local">,<input type="email">,<input type="file">,<input type="hidden">,<input type="image">,<input type="month">,<input type="number">,<input type="password">,<input type="radio">,<input type="range">,<input type="reset">,<input type="search">,<input type="submit">,<input type="tel">,<input type="text">,<input type="time">,<input type="url">,<input type="week">
+    name="" - Define um nome único para o formulário. É utilizado pelo JavaScript ou Back End para puxarmos o valor do campo do formulário.
+    label - Define o rótulo do formulário. for="" relaciona a label e o id="" do formulário.
+  *button
+    button - Cria um botão, utilizado para diferentes interações na página.
+    form > button - Button dentro de form envia/ativa a action do form.
+  atributos
+    placeholder="" - Texto quando o formulário não está preenchido. (dica de preenchimento)
+    required - Define o input como obrigatório.
+    disabled - Desabilita o input.
+    minlength e maxlength - Mínimo e máximo de caracteres.
+    value - Valor inicial do formulário.
+  *checkbox e radio
+    checkbox - Caixa que pode ser marcada/desmarcada.
+    radio - Grupo de inputs com base no mesmo name, apenas um pode ser selecionado.
+  *select
+    select - Campo de seleção com diferentes opções (option).
+    option - Opções do campo de seleção.
+  *textarea
+    textarea - Área de texto, para valores que ocupem mais de uma linha. - 
+    rows="" - Indica o tamanho de linhas visíveis.
+
+Sinais:
+  div > p - Apenas p que for filho direto de div (p que estiver dentro da div pae e filho)
+  p + p - Todo p que vier após um elemento p
+  * - Seleciona todos os elementos do site.
