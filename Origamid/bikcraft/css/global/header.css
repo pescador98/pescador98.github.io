@@ -51,7 +51,8 @@
 
 @media (max-width: 600px) {
   .header-menu {
-    gap: 12;
+    gap: 12px;
+    flex-wrap: nowrap;
   }
   .header-menu a {
     background-color: var(--c12);
