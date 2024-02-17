@@ -1,0 +1,20 @@
+.termos {
+  padding: 60px 0;
+}
+.termos + h2 {
+  margin-top: 40px;
+}
+
+ol {
+  counter-reset: item;
+  margin-bottom: 20px;
+}
+OL > LI {
+  display: block;
+  margin-bottom: 20px;
+  max-width: 75ch;
+}
+OL > LI:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}

@@ -58,6 +58,10 @@
   font: 600 4rem/1.125 "Poppins", sans-serif;
 }
 
+.fw-600 {
+  font-weight: 600;
+}
+
 @media (max-width: 1200px) {
   .font-1-xxl {
     font-size: 3rem;

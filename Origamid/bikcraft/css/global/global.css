@@ -7,12 +7,14 @@ h2,
 h3,
 h4,
 ul,
+ol,
 blockquote,
 p {
   margin: 0px;
 }
 
-ul {
+ul,
+ol {
   padding: 0px;
   list-style: none;
 }
