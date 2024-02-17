@@ -26,6 +26,15 @@
   background: var(--c9);
 }
 
+.botao.seta::after {
+  content: "";
+  width: 18px;
+  height: 10px;
+  background: url(../../img/icones/seta.svg);
+  display: inline-block;
+  margin-left: 12px;
+}
+
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
