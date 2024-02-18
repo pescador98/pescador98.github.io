@@ -1,4 +1,4 @@
-.bicicletas {
+.bicicletas-home {
   padding: 120px 70px;
   position: relative;
 }
@@ -67,7 +67,7 @@
   /* .bicicletas-lista {
     grid-template-columns: 1fr;
   } */
-  .bicicletas {
+  .bicicletas-home {
     padding: 60px 36px;
   }
   .bicicletas-lista p {
