@@ -1,0 +1,163 @@
+.bicicletas-vendas-bg {
+  background-color: var(--c11);
+}
+
+.bicicleta-seguros-bg {
+  background: linear-gradient(
+    var(--c0) 10%,
+    var(--c11) 10%,
+    var(--c11) 90%,
+    var(--c12) 90%
+  );
+}
+.bicicleta-seguros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bgcor-12 {
+  background-color: var(--c12);
+  border-radius: 4px;
+}
+
+.bicicletas-vendas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bicicletas-vendas-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.bicicletas-vendas-img img {
+  flex: 1;
+  min-width: 200px;
+}
+
+.bicicletas-vendas-img img:nth-child(1) {
+  min-width: 100%;
+}
+.bicicletas-vendas-texto p {
+  margin-bottom: 32px;
+}
+.bicicletas-vendas-info ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding: 32px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+.bicicletas-vendas-ficha ul {
+  padding: 32px;
+  margin-top: 12px;
+}
+.bicicletas-vendas-ficha li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--c11);
+  padding: 4px 0;
+}
+.bicicletas-vendas-ficha li:last-child {
+  border-bottom: none;
+}
+
+#bicicletas-vendas {
+  grid-template-columns: 1fr 1fr;
+}
+
+.bicicleta-entrega {
+  display: grid;
+  grid-template-columns: max-content auto;
+  justify-items: start;
+  align-items: center;
+  gap: 8px 12px;
+  margin-bottom: 40px;
+}
+.bicicleta-entrega a {
+  grid-row: span 2;
+}
+.bicicleta-entrega > span {
+  display: flex;
+  background-color: var(--c12);
+  border-radius: 4px;
+  padding: 4px 8px;
+  align-items: center;
+  gap: 8px;
+}
+
+.bicicleta-entrega span img {
+  width: 16px;
+  height: 16px;
+}
+
+.bicicleta-seguros-conteudo {
+  padding: 110px 0 0 40px;
+}
+.bicicleta-seguros-conteudo h2 {
+  margin-bottom: 32px;
+}
+
+.bicicleta-seguros-conteudo p {
+  margin-bottom: 20px;
+}
+
+.bicicleta-seguros-conteudo a {
+  margin-bottom: 20px;
+}
+
+.bicicleta-seguros img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1250px) {
+  .bicicleta-seguros-bg {
+    background: var(--c11);
+  }
+  .bicicleta-seguros-conteudo h2 {
+    font-size: 2.5rem;
+  }
+  .bicicleta-seguros-conteudo p {
+    font-size: 1.5rem;
+  }
+  .bicicleta-seguros img {
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .bicicletas-vendas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #bicicleta-vantagem h3 {
+    font-size: 1.125rem;
+  }
+  #bicicleta-vantagem p {
+    font-size: 1rem;
+  }
+  .bicicleta-seguros-conteudo h2 {
+    font-size: 1.75rem;
+  }
+  .bicicleta-seguros-conteudo p {
+    font-size: 1rem;
+  }
+  .bicicletas-vendas-img {
+    grid-row: 2;
+  }
+  .bicicleta-seguros {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
