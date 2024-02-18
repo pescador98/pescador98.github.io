@@ -1,0 +1,15 @@
+.seguro-vantagem h2 {
+  padding-bottom: 32px;
+}
+.seguro-vantagem ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px;
+  padding: 60px 0;
+}
+@media (max-width: 830px) {
+  .seguro-vantagem ul {
+    gap: 20px;
+    padding: 40px 0;
+  }
+}

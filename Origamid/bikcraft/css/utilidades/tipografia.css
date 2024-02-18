@@ -61,6 +61,9 @@
 .fw-600 {
   font-weight: 600;
 }
+.fw-400 {
+  font-weight: 400;
+}
 
 @media (max-width: 1200px) {
   .font-1-xxl {

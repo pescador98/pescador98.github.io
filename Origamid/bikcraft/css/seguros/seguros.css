@@ -1,6 +1,10 @@
 .seguros-bg {
   background-color: var(--c11);
 }
+.seguro-vantagem-bg {
+  background-color: var(--c12);
+  padding: 120px 0;
+}
 .seguros {
   padding-top: 60px;
   padding-bottom: 120px;
@@ -55,4 +59,8 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+}
+
+.npt {
+  padding-top: 0px;
 }

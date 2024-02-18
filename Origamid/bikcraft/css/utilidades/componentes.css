@@ -25,7 +25,9 @@
 .botao.secundario:hover {
   background: var(--c9);
 }
-
+.botao.seta {
+  align-items: center;
+}
 .botao.seta::after {
   content: "";
   width: 18px;
@@ -33,6 +35,11 @@
   background: url(../../img/icones/seta.svg);
   display: inline-block;
   margin-left: 12px;
+  transition: transform 0.3s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
 }
 
 .botao:hover {
