@@ -90,3 +90,10 @@
     font-size: 1.5rem;
   }
 }
+
+.caps {
+  text-transform: uppercase;
+}
+.lowcaps {
+  text-transform: lowercase;
+}

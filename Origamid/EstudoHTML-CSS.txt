@@ -88,6 +88,7 @@ Sinais:
   div > p - Apenas p que for filho direto de div (p que estiver dentro da div pae e filho)
   p + p - Todo p que vier após um elemento p
   * - Seleciona todos os elementos do site.
+  ~ p Procura o proximo elemento que contenha p
 
 Variaveis:
   --nome-da-variavel: valor da variavel. usado para valores pre-definidos como cor, tamanho de texto, margin, etc. Normalmente usado em :root{}

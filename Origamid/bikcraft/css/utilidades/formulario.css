@@ -12,7 +12,9 @@
 
 .form input[type="text"],
 .form input[type="email"],
-.form textarea {
+.form input[type="number"],
+.form textarea,
+.form select {
   font: 400 1rem/1.5 "Roboto", sans-serif;
   border-radius: 4px;
   background: var(--c1);
@@ -24,13 +26,16 @@
 }
 .form input[type="text"]:focus,
 .form input[type="email"]:focus,
-.form textarea:focus {
+.form input[type="number"]:focus,
+.form textarea:focus,
+.form select:focus {
   outline: none;
   border-color: var(--p1);
   background: var(--c0);
   box-shadow: 0 0 2px #fea;
 }
-.form .col-2 {
+
+.col-2 {
   grid-column: span 2;
 }
 
