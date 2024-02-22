@@ -55,6 +55,9 @@
   }
 }
 
+.titulo {
+  background: url("../../img/dec/top-right.svg") no-repeat top right 40px;
+}
 .titulo-bg {
   background-color: var(--c11);
   padding: 60px 0;

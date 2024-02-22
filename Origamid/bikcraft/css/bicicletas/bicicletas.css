@@ -11,6 +11,7 @@
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: start;
+  background: url("../../img/dec/top-right.svg") no-repeat top right;
 }
 .bicicleta-detalhes h2 {
   margin-bottom: 20px;
@@ -42,6 +43,7 @@
 .bicicleta-detalhes img {
   width: 24px;
   width: 24px;
+  margin-right: 8px;
 }
 .bicicleta-imagem {
   display: grid;

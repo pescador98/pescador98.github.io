@@ -16,7 +16,8 @@
   border-radius: 4px 0 0 4px;
 }
 .contato-form {
-  background-color: var(--c0);
+  background: var(--c0) url("../../img/dec/bottom-right.svg") no-repeat bottom
+    40px right 40px;
   border-radius: 0 4px 4px 0;
 }
 
