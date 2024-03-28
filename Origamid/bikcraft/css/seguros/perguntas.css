@@ -11,21 +11,25 @@
 .seguro-perguntas dl > div:nth-child(odd) {
   background-color: var(--c2);
 }
-.seguro-perguntas dt {
+.seguro-perguntas button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
 }
-.seguro-perguntas dt::before {
+.seguro-perguntas button::before {
   content: "";
   width: 12px;
   height: 8px;
   background: var(--p1);
   display: inline-block;
 }
-.seguro-perguntas dt::after {
+.seguro-perguntas button::after {
   content: "";
   width: 14px;
   height: 6px;
@@ -33,8 +37,17 @@
   display: inline-block;
   transition: 0.3s;
 }
-.seguro-perguntas dt:hover:after {
+.seguro-perguntas button:hover:after,
+.seguro-perguntas button[aria-expanded="true"]::after {
   transform: rotate(180deg);
+}
+
+.seguro-perguntas dd {
+  display: none;
+}
+
+.seguro-perguntas dd.ativa {
+  display: block;
 }
 
 .seguro-perguntas dd {
