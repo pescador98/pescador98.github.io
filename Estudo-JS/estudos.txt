@@ -83,3 +83,4 @@ Expressão regular (regex)
             let silverRegex = /silver/;
             wrongText.replace(silverRegex, "blue"); //procura o regex na string, se achar subistitui por "blue"
 
+teste git
