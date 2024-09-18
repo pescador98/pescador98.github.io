@@ -1,0 +1,48 @@
+/*grid*/
+.grid {
+  display: grid;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+.logo {
+  grid-area: logo;
+}
+.nav {
+  grid-area: nav;
+}
+.content {
+  grid-area: content;
+}
+.sidenav {
+  grid-area: sidenav;
+}
+.advert {
+  grid-area: advert;
+}
+.footer {
+  grid-area: footer;
+}
+
+.grid-auto-rows-2 {
+  grid-template:
+    "logo nav nav" 50px
+    "sidenav content advert" 150px
+    "sidenav footer footer" 100px
+    / 100px 1fr 50px;
+  grid-auto-rows: 50px 100px;
+  gap: 10px;
+}
+.item {
+  background: tomato;
+  text-align: center;
+  margin: 5px;
+  font-size: 1.5em;
+}
+
+body {
+  font-family: monospace;
+  color: #333;
+  padding-bottom: 60px;
+  margin: 0px;
+}
