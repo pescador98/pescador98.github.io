@@ -1,0 +1,111 @@
+body {
+  font-family: "Vollkorn", Georgia, serif;
+  /* background: tan; */
+}
+body,
+p,
+h1,
+ul,
+li,
+blockquote {
+  padding: 0px;
+  margin: 0px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* Grid geral */
+.estrutura {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+  grid-template-areas:
+    "header header header"
+    "sidenav conteudo anuncios"
+    "footer footer footer";
+}
+/* HEADER */
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  align-items: center;
+}
+.logo {
+  max-width: 200px;
+}
+.header ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.header nav a {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.125em;
+  transition: 0.1s;
+}
+.header nav a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* SIDENAV */
+.sidenav {
+  grid-area: sidenav;
+  background: #fafbfc;
+  padding: 30px;
+}
+.sidenav ul li a {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+}
+.sidenav ul {
+  display: grid;
+  justify-items: center;
+}
+.sidenav ul li {
+  background: white;
+  /* min-width: 60px;
+  max-width: 100px; */
+
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 auto 30px auto;
+}
+
+.sidenav ul li:hover {
+  background: #b07dfb;
+}
+/* CONTEUDO */
+.conteudo {
+  grid-area: conteudo;
+}
+/* ANUNCIOS */
+.anuncios {
+  grid-area: anuncios;
+  background: #fafbfc;
+}
+.anuncio-item {
+  width: 240px;
+  height: 200px;
+  margin: 30px;
+}
+.anuncio-item img {
+  border-radius: 5px;
+}
+
+.footer {
+  grid-area: footer;
+}
