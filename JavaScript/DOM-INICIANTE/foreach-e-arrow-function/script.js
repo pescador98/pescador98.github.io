@@ -1,12 +1,8 @@
-const img = document.querySelectorAll("img");
-console.log(img);
-img.forEach((e, i) => console.log(i, e));
-
 // Mostre no console cada parágrado do site
 const paragrafos = document.querySelectorAll("p");
-paragrafos.forEach((i) => console.log(i));
+paragrafos.forEach((e) => console.log(e));
 // Mostre o texto dos parágrafos no console
-paragrafos.forEach((i) => console.log(i.innerText));
+paragrafos.forEach((e) => console.log(e.innerText));
 
 // Como corrigir os erros abaixo:
 const imgs = document.querySelectorAll("img");
@@ -21,4 +17,3 @@ imgs.forEach(() => {
 });
 
 imgs.forEach(() => i++);
-console.log(i);
